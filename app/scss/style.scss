@@ -3,7 +3,9 @@
 @import 'fonts';
 
 //start header
-
+.header{
+  background-color: #fff;
+}
 .header__top-inner{
   display: flex;
   justify-content: space-between;
@@ -101,6 +103,7 @@
 }
 
 .basket{
+  margin-right: 20px;
   span{
     background-color: $green;
   }
@@ -114,7 +117,6 @@
 }
 
 .user{
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -156,6 +158,10 @@
   display: flex;
   align-items: center;
 }
+.header__btn-menu,
+.menu__btn{
+  display: none;
+}
 
 .header__btn-login--off{
   display: none;
@@ -191,6 +197,7 @@
   position: absolute;
   top: 70px;
   background-color: #fff;
+  z-index: 5;
 }
 
 .user__box,
@@ -1215,3 +1222,5 @@ button.icon-unsorted{
 
 
 //end product-page
+
+@import 'media';
